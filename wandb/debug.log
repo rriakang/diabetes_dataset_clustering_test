@@ -1,0 +1,122 @@
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_setup.py:_flush():81] Current SDK version is 0.22.0
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_setup.py:_flush():81] Configure stats pid to 372667
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_setup.py:_flush():81] Loading settings from /home/ccl/.config/wandb/settings
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_setup.py:_flush():81] Loading settings from /home/ccl/Desktop/rirakang/rirakang/fedops-hypo/wandb/settings
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_init.py:setup_run_log_directory():686] Logging user logs to /home/ccl/Desktop/rirakang/rirakang/fedops-hypo/wandb/run-20251019_130508-ih82obmq/logs/debug.log
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_init.py:setup_run_log_directory():687] Logging internal logs to /home/ccl/Desktop/rirakang/rirakang/fedops-hypo/wandb/run-20251019_130508-ih82obmq/logs/debug-internal.log
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_init.py:init():813] calling init triggers
+2025-10-19 13:05:08,653 INFO    MainThread:372667 [wandb_init.py:init():818] wandb.init called with sweep_config: {}
+config: {'learning_rate': 0, 'optimizer': '', 'dataset': '', 'model_architecture': '', 'batch_size': 0, 'epochs': 0, 'num_rounds': 0, '_wandb': {}}
+2025-10-19 13:05:08,654 INFO    MainThread:372667 [wandb_init.py:init():861] starting backend
+2025-10-19 13:05:08,905 INFO    MainThread:372667 [wandb_init.py:init():864] sending inform_init request
+2025-10-19 13:05:08,950 INFO    MainThread:372667 [wandb_init.py:init():872] backend started and connected
+2025-10-19 13:05:08,955 INFO    MainThread:372667 [wandb_init.py:init():942] updated telemetry
+2025-10-19 13:05:09,001 INFO    MainThread:372667 [wandb_init.py:init():966] communicating run to backend with 90.0 second timeout
+2025-10-19 13:05:09,737 INFO    MainThread:372667 [wandb_init.py:init():1017] starting run threads in backend
+2025-10-19 13:05:09,869 INFO    MainThread:372667 [wandb_run.py:_console_start():2506] atexit reg
+2025-10-19 13:05:09,869 INFO    MainThread:372667 [wandb_run.py:_redirect():2354] redirect: wrap_raw
+2025-10-19 13:05:09,870 INFO    MainThread:372667 [wandb_run.py:_redirect():2423] Wrapping output streams.
+2025-10-19 13:05:09,870 INFO    MainThread:372667 [wandb_run.py:_redirect():2446] Redirects installed.
+2025-10-19 13:05:09,872 INFO    MainThread:372667 [wandb_init.py:init():1057] run started, returning control to user process
+2025-10-19 15:38:14,913 INFO    wandb-AsyncioManager-main:372667 [service_client.py:_forward_responses():84] Reached EOF.
+2025-10-19 15:38:14,913 INFO    wandb-AsyncioManager-main:372667 [mailbox.py:close():137] Closing mailbox, abandoning 1 handles.
+2025-10-19 15:38:15,672 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,682 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,682 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,682 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,682 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,683 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,684 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,685 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2025-10-19 15:38:15,700 ERROR   wandb-AsyncioManager-main:372667 [asyncio_manager.py:fn_wrap_exceptions():183] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/asyncio_manager.py", line 181, in fn_wrap_exceptions
+    await fn()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/site-packages/wandb/sdk/lib/service/service_client.py", line 65, in _send_server_request
+    await self._writer.drain()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/home/ccl/anaconda3/envs/rrhypo/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

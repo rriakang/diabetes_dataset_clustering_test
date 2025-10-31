@@ -1,0 +1,11 @@
+[2025-10-31 15:00:52,076][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:00:52"}
+[2025-10-31 15:00:52,076][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:00:52,076][data_preparation][INFO] - Checking for CSV in existing path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:00:52,076][data_preparation][INFO] - Downloading Kaggle dataset via KaggleHub: mohankrishnathalla/diabetes-health-indicators-dataset...
+[2025-10-31 15:00:52,468][data_preparation][INFO] - KaggleHub cache path: /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1
+[2025-10-31 15:00:52,469][data_preparation][INFO] - Searching for 'diabetes_binary_health_indicators_BRFSS2015.csv' in /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset...
+[2025-10-31 15:00:52,469][data_preparation][ERROR] - KaggleHub 데이터셋 처리 실패: CSV file not found in target path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:00:52,470][data_preparation][ERROR] - Directory contents (max 10): ['diabetes_dataset.csv']
+[2025-10-31 15:00:52,470][__main__][INFO] - data loaded
+[2025-10-31 15:00:52,474][root][INFO] - init model_type: Pytorch
+[2025-10-31 15:01:28,409][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close

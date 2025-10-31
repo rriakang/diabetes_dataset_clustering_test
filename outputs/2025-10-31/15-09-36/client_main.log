@@ -1,0 +1,6 @@
+[2025-10-31 15:09:36,430][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:09:36"}
+[2025-10-31 15:09:36,430][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:09:36,430][data_preparation][INFO] - Checking for CSV in existing path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:09:36,430][data_preparation][INFO] - Using cached dataset: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_dataset.csv
+[2025-10-31 15:09:36,694][data_preparation][INFO] - 데이터 로드 완료: 80000개 (Train/Val), 20000개 (Global Test)
+[2025-10-31 15:09:36,730][root][INFO] - Client 1가 26667개의 (Train/Val) 샘플을 할당받았습니다.

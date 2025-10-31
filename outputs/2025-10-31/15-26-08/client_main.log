@@ -1,0 +1,8 @@
+[2025-10-31 15:26:08,308][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:26:08"}
+[2025-10-31 15:26:08,308][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:26:08,308][data_preparation][INFO] - Checking for CSV in existing path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:26:08,308][data_preparation][INFO] - Using cached dataset: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_dataset.csv
+[2025-10-31 15:26:08,776][data_preparation][INFO] - 데이터 로드 완료: 80000 (Train/Val), 20000 (Test), input_dim=52
+[2025-10-31 15:26:08,876][__main__][INFO] - data loaded
+[2025-10-31 15:26:08,879][root][INFO] - init model_type: Pytorch
+[2025-10-31 15:27:02,754][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close

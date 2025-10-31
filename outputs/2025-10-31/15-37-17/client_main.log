@@ -1,0 +1,64 @@
+[2025-10-31 15:37:17,204][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:37:17"}
+[2025-10-31 15:37:17,204][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:37:17,204][data_preparation][INFO] - Checking for CSV in existing path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:37:17,204][data_preparation][INFO] - Using cached dataset: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_dataset.csv
+[2025-10-31 15:37:17,672][data_preparation][INFO] - 데이터 로드 완료: 80000 (Train/Val), 20000 (Test), input_dim=52
+[2025-10-31 15:37:17,796][__main__][INFO] - data loaded
+[2025-10-31 15:37:17,798][root][INFO] - init model_type: Pytorch
+[2025-10-31 15:46:10,200][root][INFO] - bulid model
+[2025-10-31 15:46:10,200][root][INFO] - FL start
+[2025-10-31 15:46:10,209][fedops.client.client_api][INFO] - FL_server_IP:port - ccl.gachon.ac.kr:40023
+[2025-10-31 15:46:10,210][root][INFO] - FL learning ready
+[2025-10-31 15:46:10,210][root][INFO] - fl_task_id: diabetesdatasetrr
+[2025-10-31 15:46:10,210][root][INFO] - dataset: diabetes_dataset
+[2025-10-31 15:46:10,210][root][INFO] - output_size: 2
+[2025-10-31 15:46:10,210][root][INFO] - validation_split: 0.1
+[2025-10-31 15:46:10,211][root][INFO] - model_type: Pytorch
+[2025-10-31 15:46:10,211][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_numpy_client() is deprecated. 
+	Instead, use `flwr.client.start_client()` by ensuring you first call the `.to_client()` method as shown below: 
+	flwr.client.start_client(
+		server_address='<IP>:<PORT>',
+		client=FlowerClient().to_client(), # <-- where FlowerClient is of type flwr.client.NumPyClient object
+	)
+	Using `start_numpy_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-31 15:46:10,212][flwr][WARNING] - DEPRECATED FEATURE: flwr.client.start_client() is deprecated.
+	Instead, use the `flower-supernode` CLI command to start a SuperNode as shown below:
+
+		$ flower-supernode --insecure --superlink='<IP>:<PORT>'
+
+	To view all available options, run:
+
+		$ flower-supernode --help
+
+	Using `start_client()` is deprecated.
+
+            This is a deprecated feature. It will be removed
+            entirely in future versions of Flower.
+        
+[2025-10-31 15:46:10,247][flwr][DEBUG] - Opened insecure gRPC connection (no certificates were passed)
+[2025-10-31 15:46:10,248][flwr][DEBUG] - ChannelConnectivity.IDLE
+[2025-10-31 15:46:10,249][flwr][DEBUG] - ChannelConnectivity.CONNECTING
+[2025-10-31 15:46:10,254][flwr][DEBUG] - ChannelConnectivity.READY
+[2025-10-31 15:46:24,722][flwr][INFO] - 
+[2025-10-31 15:46:24,722][flwr][INFO] - Received: train message c0d5739e-dcab-49d3-af91-998884198064
+[2025-10-31 15:46:24,735][fedops.client.client_api][INFO] - [cluster-upsert] success (task_id=diabetesdatasetrr, mac=58:11:22:93:a7:4b, cluster_id=0)
+[2025-10-31 15:46:27,477][fedops.client.client_fl][INFO] - train_performance - {"fl_task_id": "diabetesdatasetrr", "client_mac": "58:11:22:93:a7:4b", "client_name": "ccl-x-server", "round": 1, "gl_model_v": 1, "train_loss": 0.5617732456127803, "train_accuracy": 0.6977916666666667, "train_f1_score": 0.685744598806134, "val_loss": 0.557876054020155, "val_accuracy": 0.6989126359205099, "val_f1_score": 0.6849372100525452, "train_time": 2.7411370277404785, "wandb_name": "", "cluster_id": 0}
+[2025-10-31 15:46:27,493][flwr][INFO] - Sent reply
+[2025-10-31 15:46:52,929][flwr][INFO] - 
+[2025-10-31 15:46:52,929][flwr][INFO] - Received: evaluate message 84a182b0-a377-4e39-9607-129f45bd1937
+[2025-10-31 15:46:53,301][fedops.client.client_fl][INFO] - test - {"fl_task_id": "diabetesdatasetrr", "client_mac": "58:11:22:93:a7:4b", "client_name": "ccl-x-server", "round": 1, "test_loss": 0.5622558785438537, "test_accuracy": 0.6971, "gl_model_v": 1, "wandb_name": ""}
+[2025-10-31 15:46:53,314][flwr][INFO] - Sent reply
+[2025-10-31 15:46:53,321][flwr][INFO] - 
+[2025-10-31 15:46:53,321][flwr][INFO] - Received: reconnect message 5b33eab1-6a1b-4603-81a0-9e160a093f50
+[2025-10-31 15:46:53,364][flwr][DEBUG] - gRPC channel closed
+[2025-10-31 15:46:53,364][flwr][INFO] - Disconnect and shut down
+[2025-10-31 15:46:53,365][root][INFO] - fl learning finished
+[2025-10-31 15:46:53,367][root][INFO] - client_operation_time - {"fl_task_id": "diabetesdatasetrr", "client_mac": "58:11:22:93:a7:4b", "client_name": "ccl-x-server", "operation_time": 43.1563982963562, "gl_model_v": 1}
+[2025-10-31 15:46:53,414][root][INFO] - try notify_fin
+[2025-10-31 15:46:53,433][root][INFO] - trainFin
+[2025-10-31 15:46:53,433][root][INFO] - FL Client Learning Finish
+[2025-10-31 15:51:56,789][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close

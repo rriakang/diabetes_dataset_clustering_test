@@ -1,0 +1,9 @@
+[2025-10-31 14:34:38,250][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 14:34:38"}
+[2025-10-31 14:34:38,250][root][INFO] - [partition] num_clients=3, client_id=2, seed=42
+[2025-10-31 14:34:38,560][data_preparation][INFO] - 데이터 로드 완료: 80000개 (Train/Val), 20000개 (Global Test)
+[2025-10-31 14:34:38,619][root][INFO] - Client 2가 26667개의 (Train/Val) 샘플을 할당받았습니다.
+[2025-10-31 14:34:38,643][root][INFO] - Client 2 파티션: 24000 train, 2667 val 샘플.
+[2025-10-31 14:34:38,643][root][INFO] - 글로벌 테스트셋: 20000 test 샘플.
+[2025-10-31 14:34:38,643][__main__][INFO] - data loaded
+[2025-10-31 14:34:38,645][root][INFO] - init model_type: Pytorch
+[2025-10-31 14:55:11,453][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close

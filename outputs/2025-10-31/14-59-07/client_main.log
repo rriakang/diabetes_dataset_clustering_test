@@ -1,0 +1,11 @@
+[2025-10-31 14:59:08,021][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 14:59:08"}
+[2025-10-31 14:59:08,021][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 14:59:08,021][data_preparation][INFO] - Downloading Kaggle dataset via KaggleHub: mohankrishnathalla/diabetes-health-indicators-dataset...
+[2025-10-31 14:59:09,792][data_preparation][INFO] - KaggleHub cache path: /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1
+[2025-10-31 14:59:09,792][data_preparation][INFO] - Linked /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1 -> /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 14:59:09,792][data_preparation][ERROR] - KaggleHub 데이터셋 처리 실패: CSV file not found in target path: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_binary_health_indicators_BRFSS2015.csv
+[2025-10-31 14:59:09,792][data_preparation][ERROR] - Kaggle API 토큰이 올바른지 확인하세요 (e.g., ~/.kaggle/kaggle.json)
+[2025-10-31 14:59:09,793][data_preparation][ERROR] - 또는 'pip install kagglehub'가 실행되었는지 확인하세요.
+[2025-10-31 14:59:09,793][__main__][INFO] - data loaded
+[2025-10-31 14:59:09,794][root][INFO] - init model_type: Pytorch
+[2025-10-31 15:00:37,449][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close

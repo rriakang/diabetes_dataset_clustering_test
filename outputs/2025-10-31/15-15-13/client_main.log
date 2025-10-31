@@ -1,0 +1,9 @@
+[2025-10-31 15:15:13,244][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:15:13"}
+[2025-10-31 15:15:13,244][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:15:13,244][data_preparation][INFO] - Downloading Kaggle dataset via KaggleHub: mohankrishnathalla/diabetes-health-indicators-dataset...
+[2025-10-31 15:15:13,620][data_preparation][INFO] - KaggleHub cache path: /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1
+[2025-10-31 15:15:13,621][data_preparation][INFO] - Linked /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1 -> /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:15:13,621][data_preparation][INFO] - Searching for 'diabetes_dataset.csv' in /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset...
+[2025-10-31 15:15:13,621][data_preparation][INFO] - Found CSV file: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_dataset.csv
+[2025-10-31 15:15:13,895][data_preparation][INFO] - 데이터 로드 완료: 80000개 (Train/Val), 20000개 (Global Test)
+[2025-10-31 15:15:13,929][root][INFO] - Client 1가 26667개의 (Train/Val) 샘플을 할당받았습니다.

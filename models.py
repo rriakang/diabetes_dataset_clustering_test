@@ -6,32 +6,35 @@ from torch import optim
 import torch.nn.functional as F
 from tqdm import tqdm 
 from torch.optim.lr_scheduler import CosineAnnealingLR
-# Define MNIST Model    
-class MNISTClassifier(nn.Module):
-    # To properly utilize the config file, the output_size variable must be used in __init__().
-    def __init__(self, output_size):
-        super(MNISTClassifier, self).__init__()
-        # Convolutional layers
-        self.conv1 = nn.Conv2d(1, 32, kernel_size=5, stride=1, padding=2)
-        self.conv2 = nn.Conv2d(32, 64, kernel_size=5, stride=1, padding=2)
-        self.pool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0)
 
-        # Fully connected layers
-        self.fc1 = nn.Linear(64 * 7 * 7, 1000)  # Image size is 28x28, reduced to 14x14 and then to 7x7
-        self.fc2 = nn.Linear(1000, output_size)  # 10 output classes (digits 0-9)
+
+
+# Define MNIST Model    
+# 기존 MNISTClassifier 대신 이걸로 교체 단순한 모델 사용
+import os
+
+# models.py
+import os
+import torch
+from torch import nn
+import torch.nn.functional as F
+
+class DiabetesClassifier(nn.Module):
+    # input_size를 인자로 받도록 변경
+    def __init__(self, output_size, input_size):
+        super(DiabetesClassifier, self).__init__()
+        self.fc1 = nn.Linear(int(input_size), 64)
+        self.fc2 = nn.Linear(64, 32)
+        self.fc3 = nn.Linear(32, output_size)
 
     def forward(self, x):
-        x = F.relu(self.conv1(x))
-        x = self.pool(x)
-        x = F.relu(self.conv2(x))
-        x = self.pool(x)
-
-        # Flatten the output for the fully connected layers
-        x = x.view(-1, 64 * 7 * 7)
         x = F.relu(self.fc1(x))
-        x = self.fc2(x)
-
+        x = F.relu(self.fc2(x))
+        x = self.fc3(x)
         return x
+
+# (train_torch, test_torch 함수는 그대로 둡니다)
+# ...
 
 # Set the torch train & test
 # torch train

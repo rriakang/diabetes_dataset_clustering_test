@@ -1,0 +1,11 @@
+[2025-10-31 15:08:11,944][root][INFO] - FL_Task - {"dataset": "diabetes_dataset", "start_execution_time": "2025-10-31 15:08:11"}
+[2025-10-31 15:08:11,944][root][INFO] - [partition] num_clients=3, client_id=1, seed=42
+[2025-10-31 15:08:11,944][data_preparation][INFO] - Downloading Kaggle dataset via KaggleHub: mohankrishnathalla/diabetes-health-indicators-dataset...
+[2025-10-31 15:08:12,314][data_preparation][INFO] - KaggleHub cache path: /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1
+[2025-10-31 15:08:12,315][data_preparation][INFO] - Linked /home/ccl/.cache/kagglehub/datasets/mohankrishnathalla/diabetes-health-indicators-dataset/versions/1 -> /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset
+[2025-10-31 15:08:12,315][data_preparation][INFO] - Searching for 'diabetes_dataset.csv' in /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset...
+[2025-10-31 15:08:12,315][data_preparation][INFO] - Found CSV file: /home/ccl/Desktop/RR/disabets_datasettest/fedops-hypo/dataset/diabetes-health-indicators-dataset/diabetes_dataset.csv
+[2025-10-31 15:08:12,549][data_preparation][ERROR] - 타겟 컬럼 'Diabetes_binary'을 데이터에서 찾을 수 없습니다.
+[2025-10-31 15:08:12,553][__main__][INFO] - data loaded
+[2025-10-31 15:08:12,554][root][INFO] - init model_type: Pytorch
+[2025-10-31 15:09:19,855][root][INFO] - ccl-x-server;58:11:22:93:a7:4b-client close
